@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(49, 49, 49);
+    color: rgb(255, 50, 101);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    color: rgb(139, 10, 165);
+}
+form {
+    width: auto;
+    margin: 20px 40px;
+}
+.elements {
+    margin: 40px 10px 40px;
+    display: flex;
+    justify-content: center;
+}
+.elem {
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.input{ 
+    margin-left: 5px;
+}
+input{
+    border: 2px solid rgb(0, 174, 255);
+    border-radius: 4px;
+    background-color: rgb(78, 78, 78);
+}
+#buttons{
+    display: flex;
+    justify-content: center;
+} 
+.button{
+    margin-right: 60px;
+    color: rgb(0, 174, 255);
+}
+.button:hover{
+    color: rgb(255, 50, 101);
+    border: 2px solid rgb(139, 10, 165);
+}
+#link{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+#link a{
+    color: rgb(0, 174, 255);
+}
+#link a:hover{
+    color: rgb(139, 10, 165);
+}
+.validationContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(0, 174, 255);
+    justify-content: center;
+}
+
+.hideError{
+    display: none;  
+}
+
+.showError{
+    display: block;
+    color: rgb(129, 0, 0);
+    font-weight: 700;
+}

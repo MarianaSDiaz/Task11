@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Log in</title>
+</head>
+<body>
+    <h1>Log in!</h1>
+    <form action="" id="form">
+        <div id="demail" class="elements" >
+            <label for="email">
+                Email
+            </label>
+            <input type="email" name="email" id="email" class="input" required>
+            <span id="emailError" class="hideError">
+                The email is invalid
+            </span>
+        </div> 
+        <div id="dpassw" class="elements">
+            <label for="password">
+                Password
+            </label>
+            <input type="password" name="passw" id="password" class="input" required>
+            <span id="passwError" class="hideError">
+                The password must contain at least 8 characters, consisting of letters and numbers
+            </span>
+        </div>
+        <div id="buttons" class="elements">
+            <input type="submit" value="Log in" class="button submit">
+        </div>  
+    </form>
+    <div id="link">
+        <span>
+            You are not registered?
+            <a href="https://marianasdiaz.github.io/Task9/register">
+                Click here to register
+            </a>
+        </span>
+    </div>
+    <div id="log-alert" class="validationContent">
+
+    </div>
+    <script src="./js/login.js"></script>
+    <script src="./js/validLogin.js"></script>
+</body>
+</html>

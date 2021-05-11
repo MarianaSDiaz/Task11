@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Register</title>
+</head>
+<body>
+    <h1>Register now!</h1>
+    <form action="">
+        <div class="elements">
+            <div class="elem firstname">
+                <label for="fname">
+                    Full name
+                </label>
+                <input id="fname" type="text" name="fname" required>
+                <span id="fnameError" class="hideError">
+                    The name must contain at least 6 letters and a space
+                </span>
+            </div>
+            <div class="elem demail">
+                <label for="email">
+                    Email
+                </label>
+                <input id="email" type="email" name="email" required>
+                <span id="emailError" class="hideError">
+                    The email must contain a valid format
+                </span>
+            </div>
+        </div>
+        <div class="elements">
+            <div class="elem passw">
+                <label for="passw">
+                    Password
+                </label>
+                <input id="passw" type="password" name="passw" required>
+                <span id="passwError" class="hideError">
+                    The password must contain at least 8 characters, consisting of letters and numbers
+                </span>
+            </div>
+            <div class="elem rpassw">
+                <label for="rpassw">
+                    Repeat password
+                </label>
+                <input id="rpassw" type="password" name="rpassw" required>
+                <span id="rpasswError" class="hideError">
+                    Passwords do not match
+                </span>
+            </div>
+        </div>
+        <div id="buttons">
+            <input class="button submit" type="submit" value="Submit" name="button1">
+            <input class="button reset" type="button" value="Reset" name="button2">
+        </div>
+    </form>
+    <div id="link">
+        <span>
+            Are you already registered?
+            <a href="https://marianasdiaz.github.io/Task9/login">
+                Click here to login!
+            </a>
+        </span>
+    </div>
+    <div id="reg-alert" class="validationContent">
+
+    </div>
+    <script src="./js/register.js"></script>
+    <script src="./js/validRegister.js"></script>
+</body>
+</html>
